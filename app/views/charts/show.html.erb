@@ -1,24 +1,42 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Note:</strong>
-  <%= @chart.note %>
-</p>
+<div class="container">
+  <div class="title-box">
+    <strong>Note:</strong>
+  </div>
 
-<p>
-  <strong>Chord:</strong>
-  <%= @chart.chord %>
-</p>
+  <div class="title-box">
+    <strong>Chord:</strong>
+  </div>
 
-<p>
-  <strong>Left hand:</strong>
-  <%= @chart.left_hand %>
-</p>
+  <div class="title-box">
+    <strong>Left hand:</strong>
+  </div>
 
-<p>
-  <strong>Right hand:</strong>
-  <%= @chart.right_hand %>
-</p>
+  <div class="title-box">
+    <strong>Right hand:</strong>
+  </div>
+</div>
+
+<div class="container">
+  <div class="box">
+    <%= @chart.note %>
+  </div>
+
+  <div class="box">
+    <p><%= @chart.chord %></p>
+    <p><%= @chart.left_hand %></p>
+    <p><%= @chart.right_hand %></p>
+  </div>
+
+  <div class="box">
+    <%= @chart.left_hand %>
+  </div>
+
+  <div class="box">
+    <%= @chart.right_hand %>
+  </div>
+</div>
 
 <%= link_to 'Edit', edit_chart_path(@chart) %> |
 <%= link_to 'Back', charts_path %>

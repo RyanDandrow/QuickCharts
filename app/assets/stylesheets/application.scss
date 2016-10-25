@@ -1,2 +1,53 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+
+.container {
+  display: flex;
+}
+
+.title-box {
+  background: #bdc3c7;
+  border-style: solid;
+  width: 200px;
+  height: 75px;
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  margin-right: 2px;
+  flex: 2;
+  flex-wrap: wrap;
+}
+
+.box {  
+  border-style: solid;
+  width: 200px;
+  height: 75px;
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  margin-right: 2px;
+  flex: 2;
+  flex-wrap: wrap;
+}
+
+.box:nth-child(1) {
+  align-items: center;
+  flex: 1;
+}
+
+.title-box:nth-child(1) {
+  align-items: center;
+  flex: 1;
+}
+
+p {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
