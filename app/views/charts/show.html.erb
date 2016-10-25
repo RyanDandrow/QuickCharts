@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Note:</strong>
+  <%= @chart.note %>
+</p>
+
+<p>
+  <strong>Chord:</strong>
+  <%= @chart.chord %>
+</p>
+
+<p>
+  <strong>Left hand:</strong>
+  <%= @chart.left_hand %>
+</p>
+
+<p>
+  <strong>Right hand:</strong>
+  <%= @chart.right_hand %>
+</p>
+
+<%= link_to 'Edit', edit_chart_path(@chart) %> |
+<%= link_to 'Back', charts_path %>

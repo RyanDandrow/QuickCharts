@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  note: MyString
+  chord: MyString
+  left_hand: MyString
+  right_hand: MyString
+
+two:
+  note: MyString
+  chord: MyString
+  left_hand: MyString
+  right_hand: MyString
