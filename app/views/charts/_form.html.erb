@@ -11,23 +11,35 @@
     </div>
   <% end %>
 
-  <div class="field">
+<div class="container">
+  <div class="form-group col-md-4">
+    <%= f.label :title %><br>
+    <%= f.text_field :title, class: "form-control" %>
+  </div>
+
+  <div class="form-group col-md-2">
     <%= f.label :note %><br>
-    <%= f.text_field :note %>
+    <%= f.text_field :note, class: "form-control" %>
   </div>
-  <div class="field">
+
+  <div class="form-group col-md-2">
     <%= f.label :chord %><br>
-    <%= f.text_field :chord %>
+    <%= f.text_field :chord, class: "form-control" %>
   </div>
-  <div class="field">
+
+  <div class="form-group col-md-2">
     <%= f.label :left_hand %><br>
-    <%= f.text_field :left_hand %>
+    <%= f.text_field :left_hand, class: "form-control" %>
   </div>
-  <div class="field">
+
+  <div class="form-group col-md-2">
     <%= f.label :right_hand %><br>
-    <%= f.text_field :right_hand %>
+    <%= f.text_field :right_hand, class: "form-control" %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+</div>
+
+  <div class="form-group">
+    <%= f.submit "Save changes", :class => "btn btn-mini btn-primary" %>
   </div>
+
 <% end %>
