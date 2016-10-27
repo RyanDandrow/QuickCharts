@@ -11,16 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161025183005) do
+ActiveRecord::Schema.define(version: 20161027025640) do
 
   create_table "charts", force: :cascade do |t|
     t.string   "note"
     t.string   "chord"
     t.string   "left_hand"
     t.string   "right_hand"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
     t.string   "title"
+    t.string   "second_note"
+    t.string   "second_chord"
+    t.string   "second_left_hand"
+    t.string   "second_right_hand"
   end
 
 end
