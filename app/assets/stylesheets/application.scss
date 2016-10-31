@@ -1,6 +1,10 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+@font-face {
+  font-family: "Magic Music Blocks";
+  src: url(/assets/MagicMusicBlocks-Regular.otf) format("truetype");
+}
 
 .container {
   display: flex;
@@ -33,6 +37,11 @@
   margin-right: 2px;
   flex: 2;
   flex-wrap: wrap;
+}
+
+.magicMusicBlocks {
+  font-family: "Magic Music Blocks";
+  font-size: 60px;
 }
 
 .box:nth-child(1) {
