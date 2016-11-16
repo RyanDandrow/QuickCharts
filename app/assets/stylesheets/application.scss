@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: "Magic Music Blocks";
-  src: asset-url("MagicMusicBlocks-Regular.otf") format("otf");
+  src: url("/assets/MagicMusicBlocks-Regular.otf") format("truetype");
 }
 
 .container {
