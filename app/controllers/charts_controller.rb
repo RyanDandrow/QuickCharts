@@ -69,6 +69,6 @@ class ChartsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def chart_params
-      params.require(:chart).permit(:note, :chord, :left_hand, :right_hand, :title, :second_note, :second_chord, :second_left_hand, :second_right_hand)
+      params.require(:chart).permit(:note, :chord, :left_hand, :right_hand, :title, :second_note, :second_chord, :second_left_hand, :second_right_hand, :note_image)
     end
 end

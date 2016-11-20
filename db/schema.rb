@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161027025640) do
+ActiveRecord::Schema.define(version: 20161118213853) do
 
   create_table "charts", force: :cascade do |t|
     t.string   "note"
@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 20161027025640) do
     t.string   "second_chord"
     t.string   "second_left_hand"
     t.string   "second_right_hand"
+    t.string   "note_image"
   end
 
 end

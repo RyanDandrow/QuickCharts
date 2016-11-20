@@ -21,7 +21,7 @@
 <div class="container">
   <div class="form-group col-md-2">
     <%= f.label :note %><br>
-    <%= f.text_field :note, class: "form-control" %>
+    <%= f.select :note_image, ['', 'Quarter Note', 'Whole Note', 'Eighth Note'], {}, {class: "form-control"} %>
   </div>
 
   <div class="form-group col-md-2">
