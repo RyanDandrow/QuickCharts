@@ -64,6 +64,28 @@
         </div>
       </div>
     <% end %>
+
+  <% if @chart.third_note.blank? %>
+    <!-- show nothing -->
+  <% else %>
+      <div class="container-flex">
+        <div class="box">
+          <p><%= @chart.third_note %></p>
+        </div>
+
+        <div class="box chord">
+          <p><%= @chart.third_chord %></p>
+        </div>
+
+        <div class="box magicMusicBlocks">
+          <p><%= @chart.third_left_hand %></p>
+        </div>
+
+        <div class="box magicMusicBlocks">
+          <p><%= @chart.third_right_hand %></p>
+        </div>
+      </div>
+    <% end %>
     
     <br>
     <br>

@@ -73,7 +73,27 @@
 <hr>
 
 <div class="container">
-  
+  <div class="col-md-offset-1">
+    <div class="form-group col-md-2">
+      <%= f.label :third_note, "Third Note" %><br>
+      <%= f.text_field :third_note, class: "form-control" %>
+    </div>
+
+    <div class="form-group col-md-2">
+      <%= f.label :third_chord, "Third Chord" %><br>
+      <%= f.text_field :third_chord, class: "form-control" %>
+    </div>
+
+    <div class="form-group col-md-2">
+      <%= f.label :third_left_hand, "Third Left Hand" %><br>
+      <%= f.text_field :third_left_hand, class: "form-control" %>
+    </div>
+
+    <div class="form-group col-md-2">
+      <%= f.label :third_right_hand, "Third Right Hand" %><br>
+      <%= f.text_field :third_right_hand, class: "form-control" %>
+    </div>
+  </div>
 </div>
 
   <div class="form-group">
