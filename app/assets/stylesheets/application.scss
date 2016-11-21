@@ -65,3 +65,9 @@ p {
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
+span:nth-child(1) {
+  align-items: center;
+  flex: 1;
+}
+
