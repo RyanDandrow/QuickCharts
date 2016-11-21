@@ -1,66 +1,73 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <p id="notice"><%= notice %></p>
 
-  <div class="title">
-    <h2><%= @chart.title %></h2>
-  </div>
-
-  <div class="container">
-    <div class="title-box">
-      <strong>Note:</strong>
+    <div class="title">
+      <h2><%= @chart.title %></h2>
     </div>
 
-    <div class="title-box">
-      <strong>Chord:</strong>
+    <br>
+
+    <div class="container-flex">
+      <div class="title-box">
+        <strong>Note:</strong>
+      </div>
+
+      <div class="title-box">
+        <strong>Chord:</strong>
+      </div>
+
+      <div class="title-box">
+        <strong>Left hand:</strong>
+      </div>
+
+      <div class="title-box">
+        <strong>Right hand:</strong>
+      </div>
     </div>
 
-    <div class="title-box">
-      <strong>Left hand:</strong>
-    </div>
-
-    <div class="title-box">
-      <strong>Right hand:</strong>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="box">
-      <p><%= @chart.note_image %></p>
-    </div>
-
-    <div class="box chord">
-      <p><%= @chart.chord %></p>
-    </div>
-
-    <div class="box magicMusicBlocks">
-      <p><%= @chart.left_hand %></p>
-    </div>
-
-    <div class="box magicMusicBlocks">
-      <p><%= @chart.right_hand %></p>
-    </div>
-  </div>
-
-<% if @chart.second_note.blank? %>
-  <!-- show nothing -->
-<% else %>
-    <div class="container">
+    <div class="container-flex">
       <div class="box">
-        <p><%= @chart.second_note %></p>
+        <p><%= @chart.note_image %></p>
       </div>
 
       <div class="box chord">
-        <p><%= @chart.second_chord %></p>
+        <p><%= @chart.chord %></p>
       </div>
 
       <div class="box magicMusicBlocks">
-        <p><%= @chart.second_left_hand %></p>
+        <p><%= @chart.left_hand %></p>
       </div>
 
       <div class="box magicMusicBlocks">
-        <p><%= @chart.second_right_hand %></p>
+        <p><%= @chart.right_hand %></p>
       </div>
     </div>
-  <% end %>
 
-<%= link_to 'Edit', edit_chart_path(@chart) %> |
-<%= link_to 'Back', charts_path %>
+  <% if @chart.second_note.blank? %>
+    <!-- show nothing -->
+  <% else %>
+      <div class="container-flex">
+        <div class="box">
+          <p><%= @chart.second_note %></p>
+        </div>
+
+        <div class="box chord">
+          <p><%= @chart.second_chord %></p>
+        </div>
+
+        <div class="box magicMusicBlocks">
+          <p><%= @chart.second_left_hand %></p>
+        </div>
+
+        <div class="box magicMusicBlocks">
+          <p><%= @chart.second_right_hand %></p>
+        </div>
+      </div>
+    <% end %>
+    
+    <br>
+    <br>
+
+  <%= link_to 'Edit', edit_chart_path(@chart) %> |
+  <%= link_to 'Back', charts_path %>
+</div>

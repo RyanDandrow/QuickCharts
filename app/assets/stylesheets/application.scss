@@ -6,7 +6,7 @@
   src: url("/assets/MagicMusicBlocks-Regular.otf") format("truetype");
 }
 
-.container {
+.container-flex {
   display: flex;
 }
 
@@ -28,7 +28,7 @@
 .box {  
   border-style: solid;
   width: 200px;
-  height: 75px;
+  height: auto;
   margin-bottom: 2px;
   display: flex;
   align-items: center;
