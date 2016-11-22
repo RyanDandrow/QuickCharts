@@ -37,6 +37,7 @@
   margin-right: 2px;
   flex: 2;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .magicMusicBlocks {
@@ -52,11 +53,25 @@
 .box:nth-child(1) {
   align-items: center;
   flex: 1;
+  flex-direction: column;
 }
 
 .title-box:nth-child(1) {
   align-items: center;
   flex: 1;
+  flex-direction: column;
+}
+
+.box:nth-child(2) {
+  align-items: center;
+  flex: 1;
+  flex-direction: column;
+}
+
+.title-box:nth-child(2) {
+  align-items: center;
+  flex: 1;
+  flex-direction: column;
 }
 
 p {
@@ -64,4 +79,5 @@ p {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  flex-direction: column;
 }
