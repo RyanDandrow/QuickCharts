@@ -74,6 +74,8 @@ class ChartsController < ApplicationController
       :first_row_1_line_break_chord, :first_row_1_line_break_left_hand, :first_row_1_line_break_right_hand, :second_row_1_line_break_note,
       :second_row_1_line_break_chord, :second_row_1_line_break_left_hand, :second_row_1_line_break_right_hand, :first_row_2_line_break_note,
       :first_row_2_line_break_chord, :first_row_2_line_break_left_hand, :first_row_2_line_break_right_hand, :second_row_2_line_break_note,
-      :second_row_2_line_break_chord, :second_row_2_line_break_left_hand, :second_row_2_line_break_right_hand)
+      :second_row_2_line_break_chord, :second_row_2_line_break_left_hand, :second_row_2_line_break_right_hand, :first_row_third_note,
+      :first_row_third_chord, :first_row_third_left_hand, :first_row_third_right_hand, :second_row_third_note, :second_row_third_chord,
+      :second_row_third_left_hand, :second_row_third_right_hand)
     end
 end

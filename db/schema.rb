@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161122000019) do
+ActiveRecord::Schema.define(version: 20161122052738) do
 
   create_table "charts", force: :cascade do |t|
     t.string   "note"
@@ -46,6 +46,14 @@ ActiveRecord::Schema.define(version: 20161122000019) do
     t.string   "second_row_2_line_break_chord"
     t.string   "second_row_2_line_break_left_hand"
     t.string   "second_row_2_line_break_right_hand"
+    t.string   "first_row_third_note"
+    t.string   "first_row_third_chord"
+    t.string   "first_row_third_left_hand"
+    t.string   "first_row_third_right_hand"
+    t.string   "second_row_third_note"
+    t.string   "second_row_third_chord"
+    t.string   "second_row_third_left_hand"
+    t.string   "second_row_third_right_hand"
   end
 
 end

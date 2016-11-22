@@ -12,7 +12,7 @@
   <% end %>
 
 <div class="container">
-  <div class="form-group col-md-4">
+  <div class="form-group col-md-4 col-md-offset-2">
     <%= f.label :title, "Chart Title" %><br>
     <%= f.text_field :title, class: "form-control" %>
   </div>
@@ -21,72 +21,72 @@
 <hr>
 
 <div class="container">
-  <div class="col-md-offset-1">
+  <div class="col-md-offset-2">
     <div class="form-group col-md-2">
-      <%= f.label :note %><br>
-      <%= f.select :note_image, ['', 'Quarter Note', 'Whole Note', 'Eighth Note', ''], {}, {class: "form-control"} %>
+      <%= f.label :note_image, "Note" %><br>
+      <%= f.select :note_image, ['', 'Quarter Note', 'Whole Note', 'Eighth Note'], {}, {class: "form-control"} %>
     </div>
 
     <div class="form-group col-md-2 ">
-      <%= f.label :chord %><br>
+      <%= f.label :chord, "Chord" %><br>
       <%= f.text_field :chord, class: "form-control" %>
     </div>
 
     <div class="form-group col-md-2">
-      <%= f.label :left_hand %><br>
+      <%= f.label :left_hand, "Left Hand" %><br>
       <%= f.text_field :left_hand, class: "form-control" %>
     </div>
 
     <div class="form-group col-md-2">
-      <%= f.label :right_hand %><br>
+      <%= f.label :right_hand, "Right Hand" %><br>
       <%= f.text_field :right_hand, class: "form-control" %>
     </div>
   </div>
 </div>
 
 <div class="container">
-  <div class="col-md-offset-1">
+  <div class="col-md-offset-2">
     <div class="form-group col-md-2">
-      <%= f.label :note %><br>
+      <%= f.label :first_row_1_line_break_note, "Note", class: "text-muted" %><br>
       <%= f.text_field :first_row_1_line_break_note, class: "form-control" %>
     </div>
 
     <div class="form-group col-md-2">
-      <%= f.label :chord %><br>
+      <%= f.label :first_row_1_line_break_chord, "Chord", class: "text-muted" %><br>
       <%= f.text_field :first_row_1_line_break_chord, class: "form-control" %>
     </div>
 
     <div class="form-group col-md-2">
-      <%= f.label :left_hand %><br>
+      <%= f.label :first_row_1_line_break_left_hand, "Left Hand", class: "text-muted" %><br>
       <%= f.text_field :first_row_1_line_break_left_hand, class: "form-control" %>
     </div>
 
     <div class="form-group col-md-2">
-      <%= f.label :right_hand %><br>
+      <%= f.label :first_row_1_line_break_right_hand, "Right Hand", class: "text-muted" %><br>
       <%= f.text_field :first_row_1_line_break_right_hand, class: "form-control" %>
     </div>
   </div>
 </div>
 
 <div class="container">
-  <div class="col-md-offset-1">
+  <div class="col-md-offset-2">
     <div class="form-group col-md-2">
-      <%= f.label :note %><br>
+      <%= f.label :second_row_1_line_break_note, "Note", class: "text-muted" %><br>
       <%= f.text_field :second_row_1_line_break_note, class: "form-control" %>
     </div>
 
     <div class="form-group col-md-2">
-      <%= f.label :chord %><br>
+      <%= f.label :second_row_1_line_break_chord, "Chord", class: "text-muted" %><br>
       <%= f.text_field :second_row_1_line_break_chord, class: "form-control" %>
     </div>
 
     <div class="form-group col-md-2">
-      <%= f.label :left_hand %><br>
+      <%= f.label :second_row_1_line_break_left_hand, "Left Hand", class: "text-muted" %><br>
       <%= f.text_field :second_row_1_line_break_left_hand, class: "form-control" %>
     </div>
 
     <div class="form-group col-md-2">
-      <%= f.label :right_hand %><br>
+      <%= f.label :second_row_1_line_break_right_hand, "Right Hand", class: "text-muted" %><br>
       <%= f.text_field :second_row_1_line_break_right_hand, class: "form-control" %>
     </div>
   </div>
@@ -95,7 +95,7 @@
 <hr>
 
 <div class="container">
-  <div class="col-md-offset-1">
+  <div class="col-md-offset-2">
     <div class="form-group col-md-2">
       <%= f.label :second_note, "Second Note" %><br>
       <%= f.text_field :second_note, class: "form-control" %>
@@ -112,55 +112,55 @@
     </div>
 
     <div class="form-group col-md-2">
-      <%= f.label :second_right_hand, "Second Right Hand" %><br>
+      <%= f.label :second_right_hand, "Right Hand" %><br>
       <%= f.text_field :second_right_hand, class: "form-control" %>
     </div>
   </div>
 </div>
 
 <div class="container">
-  <div class="col-md-offset-1">
+  <div class="col-md-offset-2">
     <div class="form-group col-md-2">
-      <%= f.label :note %><br>
+      <%= f.label :first_row_2_line_break_note, "Note", class: "text-muted"  %><br>
       <%= f.text_field :first_row_2_line_break_note, class: "form-control" %>
     </div>
 
     <div class="form-group col-md-2">
-      <%= f.label :chord %><br>
+      <%= f.label :first_row_2_line_break_chord, "Chord", class: "text-muted"  %><br>
       <%= f.text_field :first_row_2_line_break_chord, class: "form-control" %>
     </div>
 
     <div class="form-group col-md-2">
-      <%= f.label :left_hand %><br>
+      <%= f.label :first_row_2_line_break_left_hand, "Left Hand", class: "text-muted"  %><br>
       <%= f.text_field :first_row_2_line_break_left_hand, class: "form-control" %>
     </div>
 
     <div class="form-group col-md-2">
-      <%= f.label :right_hand %><br>
+      <%= f.label :first_row_2_line_break_right_hand, "Right Hand", class: "text-muted"  %><br>
       <%= f.text_field :first_row_2_line_break_right_hand, class: "form-control" %>
     </div>
   </div>
 </div>
 
 <div class="container">
-  <div class="col-md-offset-1">
+  <div class="col-md-offset-2">
     <div class="form-group col-md-2">
-      <%= f.label :note %><br>
+      <%= f.label :second_row_2_line_break_note, "Note", class: "text-muted"  %><br>
       <%= f.text_field :second_row_2_line_break_note, class: "form-control" %>
     </div>
 
     <div class="form-group col-md-2">
-      <%= f.label :chord %><br>
+      <%= f.label :second_row_2_line_break_chord, "Chord", class: "text-muted"  %><br>
       <%= f.text_field :second_row_2_line_break_chord, class: "form-control" %>
     </div>
 
     <div class="form-group col-md-2">
-      <%= f.label :left_hand %><br>
+      <%= f.label :second_row_2_line_break_left_hand, "Left Hand", class: "text-muted"  %><br>
       <%= f.text_field :second_row_2_line_break_left_hand, class: "form-control" %>
     </div>
 
     <div class="form-group col-md-2">
-      <%= f.label :right_hand %><br>
+      <%= f.label :second_row_2_line_break_right_hand, "Right Hand", class: "text-muted"  %><br>
       <%= f.text_field :second_row_2_line_break_right_hand, class: "form-control" %>
     </div>
   </div>
@@ -169,7 +169,7 @@
 <hr>
 
 <div class="container">
-  <div class="col-md-offset-1">
+  <div class="col-md-offset-2">
     <div class="form-group col-md-2">
       <%= f.label :third_note, "Third Note" %><br>
       <%= f.text_field :third_note, class: "form-control" %>
@@ -188,6 +188,54 @@
     <div class="form-group col-md-2">
       <%= f.label :third_right_hand, "Third Right Hand" %><br>
       <%= f.text_field :third_right_hand, class: "form-control" %>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="col-md-offset-2">
+    <div class="form-group col-md-2">
+      <%= f.label :first_row_third_note, "Third Note", class: "text-muted" %><br>
+      <%= f.text_field :first_row_third_note, class: "form-control" %>
+    </div>
+
+    <div class="form-group col-md-2">
+      <%= f.label :first_row_third_chord, "Third Chord", class: "text-muted" %><br>
+      <%= f.text_field :first_row_third_chord, class: "form-control" %>
+    </div>
+
+    <div class="form-group col-md-2">
+      <%= f.label :first_row_third_left_hand, "Third Left Hand", class: "text-muted" %><br>
+      <%= f.text_field :first_row_third_left_hand, class: "form-control" %>
+    </div>
+
+    <div class="form-group col-md-2">
+      <%= f.label :first_row_third_right_hand, "Third Right Hand", class: "text-muted" %><br>
+      <%= f.text_field :first_row_third_right_hand, class: "form-control" %>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="col-md-offset-2">
+    <div class="form-group col-md-2">
+      <%= f.label :second_row_third_note, "Third Note", class: "text-muted" %><br>
+      <%= f.text_field :second_row_third_note, class: "form-control" %>
+    </div>
+
+    <div class="form-group col-md-2">
+      <%= f.label :second_row_third_chord, "Third Chord", class: "text-muted" %><br>
+      <%= f.text_field :second_row_third_chord, class: "form-control" %>
+    </div>
+
+    <div class="form-group col-md-2">
+      <%= f.label :second_row_third_left_hand, "Third Left Hand", class: "text-muted" %><br>
+      <%= f.text_field :second_row_third_left_hand, class: "form-control" %>
+    </div>
+
+    <div class="form-group col-md-2">
+      <%= f.label :second_row_third_right_hand, "Third Right Hand", class: "text-muted" %><br>
+      <%= f.text_field :second_row_third_right_hand, class: "form-control" %>
     </div>
   </div>
 </div>
