@@ -69,6 +69,11 @@ class ChartsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def chart_params
-      params.require(:chart).permit(:note, :chord, :left_hand, :right_hand, :title, :second_note, :second_chord, :second_left_hand, :second_right_hand, :note_image, :third_note, :third_chord, :third_left_hand, :third_right_hand, :first_row_1_line_break_note, :first_row_1_line_break_chord, :first_row_1_line_break_left_hand, :first_row_1_line_break_right_hand)
+      params.require(:chart).permit(:note, :chord, :left_hand, :right_hand, :title, :second_note, :second_chord, :second_left_hand,
+      :second_right_hand, :note_image, :third_note, :third_chord, :third_left_hand, :third_right_hand, :first_row_1_line_break_note,
+      :first_row_1_line_break_chord, :first_row_1_line_break_left_hand, :first_row_1_line_break_right_hand, :second_row_1_line_break_note,
+      :second_row_1_line_break_chord, :second_row_1_line_break_left_hand, :second_row_1_line_break_right_hand, :first_row_2_line_break_note,
+      :first_row_2_line_break_chord, :first_row_2_line_break_left_hand, :first_row_2_line_break_right_hand, :second_row_2_line_break_note,
+      :second_row_2_line_break_chord, :second_row_2_line_break_left_hand, :second_row_2_line_break_right_hand)
     end
 end
