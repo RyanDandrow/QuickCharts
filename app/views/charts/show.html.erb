@@ -29,54 +29,52 @@
       <div class="box">
         <p><%= @chart.note_image %></p>
         <% if @chart.first_row_1_line_break_note.blank? %>
-          <!-- Show nothing -->
-        <% else %>
-          <p><%= @chart.first_row_1_line_break_note %></p>
+          <% else %>
+            <p><%= @chart.first_row_1_line_break_note %></p>
         <% end %>
 
         <% if @chart.second_row_1_line_break_note.blank? %>
-        <!-- show nothing -->
-        <% else %>
-          <p><%= @chart.second_row_1_line_break_note %></p>
+          <% else %>
+            <p><%= @chart.second_row_1_line_break_note %></p>
         <% end %>
       </div>
 
       <div class="box chord">
         <p><%= @chart.chord %></p>
         <% if @chart.first_row_1_line_break_chord.blank? %>
-        <% else %>
-          <p><%= @chart.first_row_1_line_break_chord %></p>
+          <% else %>
+            <p><%= @chart.first_row_1_line_break_chord %></p>
         <% end %>
 
         <% if @chart.second_row_1_line_break_chord.blank? %>
-        <% else %>
-          <p><%= @chart.second_row_1_line_break_chord %></p>
+          <% else %>
+            <p><%= @chart.second_row_1_line_break_chord %></p>
         <% end %>
       </div>
 
       <div class="box magicMusicBlocks">
         <p><%= @chart.left_hand %></p>
         <% if @chart.first_row_1_line_break_left_hand.blank? %>
-        <% else %>
-          <p><%= @chart.first_row_1_line_break_left_hand %></p>
+          <% else %>
+            <p><%= @chart.first_row_1_line_break_left_hand %></p>
         <% end %>
 
         <% if @chart.second_row_1_line_break_left_hand.blank? %>
-        <% else %>
-          <p><%= @chart.second_row_1_line_break_left_hand %></p>
+          <% else %>
+            <p><%= @chart.second_row_1_line_break_left_hand %></p>
         <% end %>
       </div>
 
       <div class="box magicMusicBlocks">
         <p><%= @chart.right_hand %></p>
         <% if @chart.first_row_1_line_break_right_hand.blank? %>
-        <% else %>
-          <p><%= @chart.first_row_1_line_break_right_hand %></p>
+          <% else %>
+            <p><%= @chart.first_row_1_line_break_right_hand %></p>
         <% end %>
 
         <% if @chart.second_row_1_line_break_right_hand.blank? %>
-        <% else %>
-          <p><%= @chart.second_row_1_line_break_right_hand %></p>
+          <% else %>
+            <p><%= @chart.second_row_1_line_break_right_hand %></p>
         <% end %>
       </div>
     </div>
@@ -88,52 +86,52 @@
         <div class="box">
           <p><%= @chart.second_note %></p>
           <% if @chart.first_row_2_line_break_note.blank? %>
-          <% else %>
-            <p><%= @chart.first_row_2_line_break_note.blank? %></p>
+            <% else %>
+              <p><%= @chart.first_row_2_line_break_note.blank? %></p>
           <% end %>
 
           <% if @chart.second_row_2_line_break_note.blank? %>
-          <% else %>
-            <p><%= @chart.second_row_2_line_break_note %></p>
+            <% else %>
+              <p><%= @chart.second_row_2_line_break_note %></p>
           <% end %>
         </div>
 
         <div class="box chord">
           <p><%= @chart.second_chord %></p>
           <% if @chart.first_row_2_line_break_chord.blank? %>
-          <% else %>
-            <p><%= @chart.first_row_2_line_break_chord %></p>
+            <% else %>
+              <p><%= @chart.first_row_2_line_break_chord %></p>
           <% end %>
 
           <% if @chart.second_row_2_line_break_chord.blank? %>
-          <% else %>
-            <p><%= @chart.second_row_2_line_break_chord %></p>
+            <% else %>
+              <p><%= @chart.second_row_2_line_break_chord %></p>
           <% end %>
         </div>
 
         <div class="box magicMusicBlocks">
           <p><%= @chart.second_left_hand %></p>
           <% if @chart.first_row_2_line_break_left_hand.blank? %>
-          <% else %>
-            <p><%= @chart.first_row_2_line_break_left_hand %></p>
+            <% else %>
+              <p><%= @chart.first_row_2_line_break_left_hand %></p>
           <% end %>
 
           <% if @chart.second_row_2_line_break_left_hand.blank? %>
-          <% else %>
-            <p><%= @chart.second_row_2_line_break_left_hand %></p>
+            <% else %>
+              <p><%= @chart.second_row_2_line_break_left_hand %></p>
           <% end %>
         </div>
 
         <div class="box magicMusicBlocks">
           <p><%= @chart.second_right_hand %></p>
           <% if @chart.first_row_2_line_break_right_hand.blank? %>
-          <% else %>
-            <p><%= @chart.first_row_2_line_break_right_hand %></p>
+            <% else %>
+              <p><%= @chart.first_row_2_line_break_right_hand %></p>
           <% end %>
 
           <% if @chart.second_row_2_line_break_right_hand.blank? %>
-          <% else %>
-            <p><%= @chart.second_row_2_line_break_right_hand %></p>
+            <% else %>
+              <p><%= @chart.second_row_2_line_break_right_hand %></p>
           <% end %>
         </div>
       </div>
@@ -145,26 +143,54 @@
       <div class="container-flex">
         <div class="box">
           <p><%= @chart.third_note %></p>
-          <p><%= @chart.first_row_third_note %></p>
-          <p><%= @chart.second_row_third_note %></p>
+          <% if @chart.first_row_third_note.blank? %>
+            <% else %>
+              <p><%= @chart.first_row_third_note %></p>
+          <% end %>
+
+          <% if @chart.second_row_third_note.blank? %>
+            <% else %>
+              <p><%= @chart.second_row_third_note %></p>
+          <% end %>
         </div>
 
         <div class="box chord">
           <p><%= @chart.third_chord %></p>
-          <p><%= @chart.first_row_third_chord %></p>
-          <p><%= @chart.second_row_third_chord %></p>
+          <% if @chart.first_row_third_chord.blank? %>
+            <% else %>
+              <p><%= @chart.first_row_third_chord %></p>
+          <% end %>
+
+          <% if @chart.second_row_third_chord.blank? %>
+            <% else %>
+              <p><%= @chart.second_row_third_chord %></p>
+          <% end %>
         </div>
 
         <div class="box magicMusicBlocks">
           <p><%= @chart.third_left_hand %></p>
-          <p><%= @chart.first_row_third_left_hand %></p>
-          <p><%= @chart.second_row_third_left_hand %></p>
+          <% if @chart.first_row_third_left_hand.blank? %>
+            <% else %>
+              <p><%= @chart.first_row_third_left_hand %></p>
+          <% end %>
+
+          <% if @chart.second_row_third_left_hand.blank? %>
+            <% else %>
+              <p><%= @chart.second_row_third_left_hand %></p>
+          <% end %>
         </div>
 
         <div class="box magicMusicBlocks">
           <p><%= @chart.third_right_hand %></p>
-          <p><%= @chart.first_row_third_right_hand %></p>
-          <p><%= @chart.second_row_third_right_hand %></p>
+          <% if @chart.first_row_third_right_hand.blank? %>
+            <% else %>
+              <p><%= @chart.first_row_third_right_hand %></p>
+          <% end %>
+
+          <% if @chart.second_row_third_right_hand.blank? %>
+            <% else %>
+              <p><%= @chart.second_row_third_right_hand %></p>
+          <% end %>
         </div>
       </div>
     <% end %>
