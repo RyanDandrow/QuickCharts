@@ -199,5 +199,6 @@
     <br>
 
   <%= link_to 'Edit', edit_chart_path(@chart) %> |
-  <%= link_to 'Back', charts_path %>
+  <%= link_to 'Back', charts_path %> |
+  <%= link_to "Export PDF", charts_show_pdf_path(format: :pdf), target: "_blank" %>
 </div>

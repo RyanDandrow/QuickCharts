@@ -12,6 +12,15 @@ class ChartsController < ApplicationController
   def show
   end
 
+  def show_pdf
+    respond_to do |format|
+      format.html
+      format.pdf do
+        render pdf: "chart"
+      end
+    end
+  end
+
   # GET /charts/new
   def new
     @chart = Chart.new

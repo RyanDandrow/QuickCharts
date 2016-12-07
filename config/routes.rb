@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   root "charts#index"
 
+  get 'charts/show_pdf' => 'charts#show_pdf'
+
   resources :charts
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
